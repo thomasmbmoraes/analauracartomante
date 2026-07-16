@@ -777,29 +777,29 @@ nav a:hover { color: var(--gold); }
   text-align: left;
 }
 
-.how-text ul {
-  list-style: none;
-  text-align: left;
-  width: 100%;
+.how-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.how-text ul li {
+.how-list-item {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  margin-bottom: 8px;
-  font-size: 0.88rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.86rem;
   color: var(--text-sec);
   line-height: 1.6;
 }
 
-.how-text ul li::before {
+.how-list-item::before {
   content: '✦';
   color: var(--gold);
-  font-size: 0.5rem;
+  font-size: 0.48rem;
   margin-top: 5px;
   flex-shrink: 0;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 /* ══════════════════════════════════════════════════════════
@@ -2089,13 +2089,11 @@ footer {
         <span class="how-step-num">01</span>
         <div class="how-icon">📋</div>
         <h3 class="how-title">Envie seus dados</h3>
-        <p class="how-text">
-          <ul>
-            <li>Nome completo e data de nascimento</li>
-            <li>Se envolver outra pessoa, nome completo e data de nascimento dela também</li>
-            <li>Informe qual leitura da Asteria deseja realizar</li>
-          </ul>
-        </p>
+        <div class="how-list">
+          <div class="how-list-item">Nome completo e data de nascimento</div>
+          <div class="how-list-item">Se envolver outra pessoa, nome completo e data de nascimento dela também</div>
+          <div class="how-list-item">Informe qual leitura da Asteria deseja realizar</div>
+        </div>
       </div>
       <div class="how-card reveal reveal-d2">
         <span class="how-step-num">02</span>
