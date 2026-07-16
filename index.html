@@ -4,26 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Asteria Cartomancia — Tarot • Intuição • Destino</title>
-
-<!-- Open Graph / WhatsApp / redes sociais -->
-<meta property="og:type"        content="website">
-<meta property="og:url"         content="https://asteriacartomancia.vercel.app/">
-<meta property="og:title"       content="Asteria Cartomancia ✦ Tarot • Intuição • Destino">
-<meta property="og:description" content="Leituras de Tarot personalizadas com responsabilidade, respeito e total sigilo. Agende pelo WhatsApp.">
-<meta property="og:image"       content="https://asteriacartomancia.vercel.app/og.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height"content="630">
-<meta property="og:locale"      content="pt_BR">
-
-<!-- Twitter Card -->
-<meta name="twitter:card"        content="summary_large_image">
-<meta name="twitter:title"       content="Asteria Cartomancia ✦ Tarot • Intuição • Destino">
-<meta name="twitter:description" content="Leituras de Tarot personalizadas com responsabilidade, respeito e total sigilo.">
-<meta name="twitter:image"       content="https://asteriacartomancia.vercel.app/og.jpg">
-
-<!-- SEO básico -->
-<meta name="description" content="Asteria Cartomancia — Leituras de Tarot personalizadas para quem busca clareza, autoconhecimento e orientação. Atendimento online, sigiloso e por áudio.">
-<meta name="theme-color" content="#0A0612">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -712,7 +692,7 @@ nav a:hover { color: var(--gold); }
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 36px 28px;
-  text-align: center;
+  text-align: left;
   position: relative;
   transition: all 0.35s ease;
   overflow: hidden;
@@ -736,15 +716,15 @@ nav a:hover { color: var(--gold); }
 .how-card:hover::before { opacity: 1; }
 
 .how-icon {
-  width: 60px; height: 60px;
-  border-radius: 50%;
+  width: 52px; height: 52px;
+  border-radius: 14px;
   background: rgba(207,168,106,0.07);
   border: 1px solid rgba(207,168,106,0.18);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 20px;
-  font-size: 1.4rem;
+  margin: 0 0 20px 0;
+  font-size: 1.3rem;
   transition: all var(--transition);
 }
 
@@ -763,41 +743,46 @@ nav a:hover { color: var(--gold); }
 }
 
 .how-title {
-  font-family: 'Cinzel', serif;
-  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
   color: var(--gold);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   margin-bottom: 14px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .how-text {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.05rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
   color: var(--text-sec);
-  line-height: 1.7;
+  line-height: 1.75;
+  text-align: left;
 }
 
 .how-text ul {
   list-style: none;
   text-align: left;
-  display: inline-block;
+  width: 100%;
 }
 
 .how-text ul li {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
-  margin-bottom: 6px;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-size: 0.88rem;
+  color: var(--text-sec);
+  line-height: 1.6;
 }
 
 .how-text ul li::before {
   content: '✦';
   color: var(--gold);
-  font-size: 0.55rem;
-  margin-top: 6px;
+  font-size: 0.5rem;
+  margin-top: 5px;
   flex-shrink: 0;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 /* ══════════════════════════════════════════════════════════
